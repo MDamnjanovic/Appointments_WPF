@@ -1,0 +1,8 @@
+Marko,Markovic,1,m,5th street,male,m,1
+Marija,Marinkovic,2,mm@gmail.com,6th street,female,marija,2
+Nikola,Nikolic,3,n@gmail.com,7th street,male,nikola,3
+Teodora,Marjanovic,4,teo@gmail.com,15th street,female,teodora,1
+Iva,Vidakovic,5,vidak@gmail.com,18th street,female,ivvid,2
+Milica,Milicevic,6,mil@gmail.com,1st street,female,milmil,3
+Stefan,Sretenovic,7,stefan@gmail.com,35th street,male,stfn,3
+Dragan,Dragan,8,drgn@gmail.com,19th street,male,dragan,1

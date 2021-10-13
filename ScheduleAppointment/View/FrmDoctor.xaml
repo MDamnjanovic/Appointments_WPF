@@ -1,0 +1,67 @@
+﻿<Window x:Class="ScheduleAppointment.View.FrmDoctor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ScheduleAppointment.View"
+        mc:Ignorable="d"
+        Title="Doctor's profile" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="Date:" HorizontalAlignment="Left" Margin="54,60,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="dtDate_Appointments" HorizontalAlignment="Left" Margin="117,60,0,0" VerticalAlignment="Top" Width="147" SelectedDateChanged="dtDate_Appointments_SelectedDateChanged"/>
+        <TextBox x:Name="tb_12AM" HorizontalAlignment="Left" Height="23" Margin="344,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235"/>
+        <Button x:Name="btn_12AM" Content="set Therapy" HorizontalAlignment="Left" Margin="604,174,0,0" VerticalAlignment="Top" Width="98" IsCancel="True" Click="btn_12AM_Click"/>
+        <TextBox x:Name="tb_10AM" HorizontalAlignment="Left" Height="23" Margin="346,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235"/>
+        <Button x:Name="btn_10AM" Content="set Therapy" HorizontalAlignment="Left" Margin="606,97,0,0" VerticalAlignment="Top" Width="98" IsCancel="True" RenderTransformOrigin="0.5,0.5" Click="btn_10AM_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.244"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <TextBox x:Name="tb_11AM" HorizontalAlignment="Left" Height="23" Margin="345,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235"/>
+        <Button x:Name="btn_11AM" Content="set Therapy" HorizontalAlignment="Left" Margin="605,135,0,0" VerticalAlignment="Top" Width="98" IsCancel="True" RenderTransformOrigin="0.072,0.609" Click="btn_11AM_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.244"/>
+                    <TranslateTransform X="-0.009" Y="-0.18"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <TextBox x:Name="tb_9AM" HorizontalAlignment="Left" Height="23" Margin="347,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235"/>
+        <Button x:Name="btn_9AM" Content="set Therapy" HorizontalAlignment="Left" Margin="607,58,0,0" VerticalAlignment="Top" Width="98" IsCancel="True" RenderTransformOrigin="0.5,0.5" Click="btn_9AM_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.244"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <TextBox x:Name="tb_1PM" HorizontalAlignment="Left" Height="23" Margin="344,211,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235"/>
+        <Button x:Name="btn_1PM" Content="set Therapy" HorizontalAlignment="Left" Margin="604,211,0,0" VerticalAlignment="Top" Width="98" IsCancel="True" Click="btn_1PM_Click"/>
+        <TextBox x:Name="tb_2PM" HorizontalAlignment="Left" Height="23" Margin="344,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235"/>
+        <Button x:Name="btn_2PM" Content="set Therapy" HorizontalAlignment="Left" Margin="604,247,0,0" VerticalAlignment="Top" Width="98" IsCancel="True" Click="btn_2PM_Click"/>
+        <TextBox x:Name="tb_3PM" HorizontalAlignment="Left" Height="23" Margin="344,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235"/>
+        <Button x:Name="btn_3PM" Content="set Therapy" HorizontalAlignment="Left" Margin="604,286,0,0" VerticalAlignment="Top" Width="98" IsCancel="True" Click="btn_3PM_Click"/>
+        <TextBox x:Name="tb_4PM" HorizontalAlignment="Left" Height="23" Margin="344,320,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235"/>
+        <Button x:Name="btn_4PM" Content="set Therapy" HorizontalAlignment="Left" Margin="604,320,0,0" VerticalAlignment="Top" Width="98" IsCancel="True" Click="btn_4PM_Click"/>
+        <Label x:Name="labelDoctor" Content="Label" HorizontalAlignment="Left" Height="28" Margin="21,10,0,0" VerticalAlignment="Top" Width="420"/>
+        <Label Content="9AM" HorizontalAlignment="Left" Margin="296,55,0,0" VerticalAlignment="Top"/>
+        <Label Content="10AM" HorizontalAlignment="Left" Margin="296,94,0,0" VerticalAlignment="Top"/>
+        <Label Content="11AM" HorizontalAlignment="Left" Margin="294,132,0,0" VerticalAlignment="Top"/>
+        <Label Content="12AM" HorizontalAlignment="Left" Margin="294,171,0,0" VerticalAlignment="Top"/>
+        <Label Content="1PM" HorizontalAlignment="Left" Margin="294,205,0,0" VerticalAlignment="Top"/>
+        <Label Content="2PM" HorizontalAlignment="Left" Margin="294,247,0,0" VerticalAlignment="Top"/>
+        <Label Content="3PM" HorizontalAlignment="Left" Margin="294,286,0,0" VerticalAlignment="Top"/>
+        <Label Content="4PM" HorizontalAlignment="Left" Margin="294,320,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnShowTherapyHistory" Content="Show therapies" HorizontalAlignment="Left" Margin="36,375,0,0" VerticalAlignment="Top" Width="104" Click="btnShowTherapyHistory_Click"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,4 @@
+1,12th street,45,New York,US
+2,15th street,37,New York,US
+3,16th street,12,New York,US
+4,18th street,174,Washington,US

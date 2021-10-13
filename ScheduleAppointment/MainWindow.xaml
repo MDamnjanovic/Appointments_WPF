@@ -1,0 +1,18 @@
+﻿<Window x:Class="ScheduleAppointment.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ScheduleAppointment"
+        mc:Ignorable="d"
+        Title="Schedule Appointments" Height="461.199" Width="1228.914" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <DataGrid x:Name="dgHospitals" HorizontalAlignment="Left" Height="295" Margin="34,72,0,0" VerticalAlignment="Top" Width="479" SelectionMode="Single" IsReadOnly="True"  SelectionChanged="dgHospitals_SelectionChanged"/>
+        <Label Content="City:" HorizontalAlignment="Left" Margin="36,27,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.508,0.195"/>
+        <ComboBox x:Name="cbCity" HorizontalAlignment="Left" Margin="87,27,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cbCity_SelectionChanged"/>
+        <Button x:Name="btnLogIn" Content="Log In" HorizontalAlignment="Left" Margin="1110,38,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <DataGrid x:Name="dgDoctors" HorizontalAlignment="Left" Height="294" Margin="538,73,0,0" VerticalAlignment="Top" Width="647"/>
+        <Button x:Name="btnScheduleAppointment" Content="Shedule appointment" HorizontalAlignment="Left" Margin="538,387,0,0" VerticalAlignment="Top" Width="174" Click="btnScheduleAppointment_Click"/>
+
+    </Grid>
+</Window>

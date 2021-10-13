@@ -1,0 +1,29 @@
+﻿<Window x:Class="ScheduleAppointment.View.FrmLogIn"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ScheduleAppointment.View"
+        mc:Ignorable="d"
+        Title="Login" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="245*" />
+            <ColumnDefinition Width="547*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="143*" />
+            <RowDefinition Height="136*" />
+            <RowDefinition Height="140*" />
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" FontSize="20" Margin="92,40,33,49">Username :</Label>
+        <TextBox Grid.Row="0" Grid.Column="1" x:Name="tbUserName" FontSize="20" Margin="41,28,101,49"></TextBox>
+        <Label Grid.Row="1" Grid.Column="0" FontSize="20" Margin="92,40,33,49">Password :</Label>
+        <PasswordBox FontSize="20" Margin="41,29,105,49" Grid.Column="1" Grid.Row="1" Name="pBpassword"/>
+        <Button Grid.Column="1" Grid.Row="2" Name="btnLogin" FontSize="20" Margin="41,32,278,56" Click="btnLogin_Click">Login</Button>
+        <Button Grid.Column="1" Grid.Row="2" Name="btnClose" FontSize="20" Margin="323,32,54,56" >Close</Button>
+
+
+    </Grid>
+</Window>
